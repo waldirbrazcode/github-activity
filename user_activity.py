@@ -106,7 +106,7 @@ def get_user_events(username: str):
                         print(message_event)
                 case 'PushEvent':
 
-                    message_event = f"{date} : Push 1 new commits at {repo['name']}"
+                    message_event = f"{date} : Push 1 new commit at {repo['name']}"
                     print(message_event)
                 case 'ReleaseEvent':
                     message_event = f"{date} : Create a new release at {repo['name']}"
