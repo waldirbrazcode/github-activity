@@ -105,9 +105,8 @@ def get_user_events(username: str):
                         message_event = f"{date} : The comment on pull request for {repo['name']} have been marked as unresolved"
                         print(message_event)
                 case 'PushEvent':
-                    size = payload['size']
 
-                    message_event = f"{date} : Push {size} new commits at {repo['name']}"
+                    message_event = f"{date} : Push 1 new commits at {repo['name']}"
                     print(message_event)
                 case 'ReleaseEvent':
                     message_event = f"{date} : Create a new release at {repo['name']}"
